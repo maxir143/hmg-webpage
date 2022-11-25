@@ -1,0 +1,22 @@
+.nabvar {
+  display: flex;
+  width: calc(100vw - (20px * 2));
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  justify-content: space-between;
+  padding-inline: 20px;
+}
+
+.nabvar-item {
+  background-color: green;
+}
+
+.nabvar-button {
+  color: black;
+}
+
+.nabvar-button:hover {
+  color: orange;
+}
