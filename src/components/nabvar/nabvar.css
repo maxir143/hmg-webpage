@@ -1,20 +1,29 @@
 .nabvar {
+  position: absolute;
+  top: 0px;
   display: flex;
-  width: calc(100vw - (20px * 2));
+  width: calc(100vw - (10px * 2));
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  background-color: red;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.034);
   justify-content: space-between;
-  padding-inline: 20px;
+}
+.nabvar-items{
+  display: flex;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nabvar-item {
-  background-color: green;
+  margin-left: 10px;
 }
 
 .nabvar-button {
   color: black;
+  text-decoration: none;
+  padding: 0.6em 1.2em;
+  font-size: 1.25em;
 }
 
 .nabvar-button:hover {

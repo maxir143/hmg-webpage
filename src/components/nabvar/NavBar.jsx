@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import './nabvar.css';
 
 export default function NavBar() {
   const navItems = [
     {
       title: 'Inicio',
-      href: '/inicio',
+      href: '/',
     },
     {
       title: 'Contáctanos',
@@ -21,13 +22,16 @@ export default function NavBar() {
   ];
   return (
     <ul className="nabvar">
-      {navItems.map(({ title, href }) => (
-        <li className="nabvar-item">
-          <button className="nabvar-button" href={href}>
-            {title}
-          </button>
-        </li>
-      ))}
+      <img src="/public/images/logo/sm-logo.png" alt="" />
+      <div className='nabvar-items'>
+        {navItems.map(({ title, href }, index) => (
+          <li key={index} className="nabvar-item">
+            <Link className="nabvar-button" to={href}>
+              {title}
+            </Link>
+          </li>
+        ))}
+      </div>
     </ul>
   );
 }
